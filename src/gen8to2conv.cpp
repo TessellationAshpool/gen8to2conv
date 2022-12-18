@@ -124,7 +124,7 @@ int main() {
 	png::image<png::rgb_pixel> gen2head("input/gen2textures/v5breeheadm.png");
 	png::image<png::rgb_pixel> gen2limbs("input/gen2textures/v5breelimbsm.png");
 	png::image<png::rgb_pixel> gen2newlimbs(mh, mw);	
-	png::image<png::rgb_pixel> gen2torso("input/gen2textures/v5breetorsom_nipples.png");
+	png::image<png::rgb_pixel> gen2torso("input/gen2textures/v5breetorsom.png");
 	png::image<png::rgb_pixel> gen2newtorso(mh, mw);
 	png::image<png::rgb_pixel> gen2eyes("input/gen2textures/v5breeeyes7m.png");
 	int mh2 = gen2eyes.get_height();
