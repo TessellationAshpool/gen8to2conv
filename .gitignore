@@ -1,0 +1,13 @@
+input/gen2textures/*
+input/gen2textures/*.jpg
+input/gen2textures/*.png
+input/gen8textures/*
+input/gen8textures/*.jpg
+input/gen8textures/*.png
+output/*
+output/*.jpg
+output/*.png
+png++/
+gen8to2conv
+gen8to2conv.o
+png++-0.2.9.tar.gz
