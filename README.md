@@ -4,6 +4,8 @@ This software converts DAZ 3D's Genesis 8 textures to Genesis 2 textures.<br>
 <br>
 Prerequisites:<br>
 <br>
+G++ (Linux c++ compiler) or Windows, etc., equivalent.<br>
+<br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a "png++" directory.<br>
 <br>
@@ -49,5 +51,7 @@ From the base directory run "rebuild.sh" from a command prompt. The software wil
 For each run that new texture conversions are wanted, only the Genesis 8 face texture needs to be updated for all Genesis 2 textures to be recreated.<br>
 <br>
 Notes: this software uses somewhat of a bespoke approach to do the texture conversion. This involves selected image portion rescaling, shifting, etc. Also, the color conversion is based on sampling colors between textures. Results seem decent in tests. Anyone contributing improvements to the software is welcome.<br>
+<br>
+Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted.<br>
 <br>
 This software has only been tested in Linux currently but should work in Windows and Apple OSes.<br>
