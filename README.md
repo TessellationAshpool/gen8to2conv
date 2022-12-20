@@ -2,6 +2,10 @@
 <br>
 This software converts DAZ 3D's Genesis 8 textures to Genesis 2 textures.<br>
 <br>
+Overall:<br>
+<br>
+After one does the installation instructions below, all that is needed is to supply a new Genesis 8 face texture then run the software to generate all Genesis 2 textures.<br>
+<br>
 Prerequisites:<br>
 <br>
 G++ (Linux c++ compiler) or Windows, etc., equivalent.<br>
@@ -13,7 +17,7 @@ Genesis 8 textures (to be converted)<br>
 <br>
 Genesis 2 textures (for reference)<br>
 <br>
-Instructions:<br>
+Installation Instructions:<br>
 <br>
 How to obtain DAZ's genesis textures:<br>
 <br>
