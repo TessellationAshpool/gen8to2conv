@@ -8,7 +8,10 @@ After one does the installation instructions below, all that is needed is to sup
 <br>
 Prerequisites:<br>
 <br>
-G++ (Linux c++ compiler) or Windows, etc., equivalent.<br>
+Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
+If using Linux or Windows Subsystem for Linux 2 (WSL2), sudo apt install libpng-dev.<br>
+If needing to install WSL2, in Windows powershell run "wsl --install".<br>
+If using Windows and not WSL2, Libpng with GnuWin32 can be used [link](https://gnuwin32.sourceforge.net/packages/libpng.htm)<br>
 <br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a "png++" directory.<br>
@@ -50,6 +53,8 @@ The results of the texture conversion will be in the "output" folder.<br>
 <br>
 Running software:<br>
 <br>
+One needs to specify the library path for png++ with "-I <png++_folderpath>" when compiling.<br>
+<br>
 From the base directory run "rebuild.sh" from a command prompt. The software will print "completed" when done.<br>
 <br>
 For each run that new texture conversions are wanted, only the Genesis 8 face texture needs to be updated for all Genesis 2 textures to be recreated.<br>
@@ -58,4 +63,5 @@ Notes: this software uses somewhat of a bespoke approach to do the texture conve
 <br>
 Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted.<br>
 <br>
-This software has only been tested in Linux currently but should work in Windows and Apple OSes.<br>
+If wanting to do development work one needs G++ on Linux or Windows or an equivalent C++ compiler.<br>
+Note: this software has only been tested to work in Linux and WSL2 so far.<br>
