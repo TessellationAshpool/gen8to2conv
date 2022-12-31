@@ -4,6 +4,7 @@ This software converts DAZ 3D's Genesis 8 textures to Genesis 2 textures.<br>
 <br>
 ### Overall:
 
+
 After one does the installation instructions below, all that is needed is to supply a new Genesis 8 face texture then run the software to generate all Genesis 2 textures.<br>
 <br>
 ## Prerequisites:
@@ -17,7 +18,8 @@ In powershell run "wsl --install".<br>
 ### Required libraries:
 
 Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
-Install with sudo apt install libpng-dev.<br>
+Install by running in a Linux or WSL2 command prompt:<br>
+sudo apt install libpng-dev.<br>
 <br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a "png++" directory in the base directory of this software.<br>
