@@ -1,7 +1,7 @@
 # Genesis 8 to 2 Texture Conversion
 <br>
 This software converts DAZ 3D's Genesis 8 textures to Genesis 2 textures.<br>
-<br>
+
 ### Overall:
 
 
@@ -13,16 +13,15 @@ After one does the installation instructions below, all that is needed is to sup
 If using Windows, Windows Subsystem for Linux 2 (WSL2) is needed. This will allow Linux commands in Windows.<br>
 <br>
 How to install WSL2 in Windows:<br>
-In powershell run "wsl --install".<br>
+In powershell run "wsl --install"<br>
 <br>
 ### Required libraries:
 
 Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
-Install by running in a Linux or WSL2 command prompt:<br>
-sudo apt install libpng-dev.<br>
+Install by running in a Linux or WSL2 command prompt "sudo apt install libpng-dev".<br>
 <br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
-Place these program files into a "png++" directory in the base directory of this software.<br>
+Place these program files into a directory named "png++" in the base directory of this software.<br>
 <br>
 ### Required textures:
 
