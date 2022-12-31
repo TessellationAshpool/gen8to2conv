@@ -2,11 +2,12 @@
 <br>
 This software converts DAZ 3D's Genesis 8 textures to Genesis 2 textures.<br>
 <br>
-### Overall:<br>
-<br>
+### Overall:
+
 After one does the installation instructions below, all that is needed is to supply a new Genesis 8 face texture then run the software to generate all Genesis 2 textures.<br>
 <br>
 ## Prerequisites:
+
 
 If using Windows, Windows Subsystem for Linux 2 (WSL2) is needed. This will allow Linux commands in Windows.<br>
 <br>
