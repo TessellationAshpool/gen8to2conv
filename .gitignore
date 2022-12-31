@@ -8,6 +8,5 @@ output/*
 output/*.jpg
 output/*.png
 png++/
-gen8to2conv
 gen8to2conv.o
 png++-0.2.9.tar.gz
