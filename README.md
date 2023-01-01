@@ -20,7 +20,7 @@ In powershell run "wsl --install"<br>
 Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
 Install by running in a Linux or WSL2 command prompt "sudo apt install libpng-dev".<br>
 Note: if using Linux and your Linux distro does not have a libpng-dev version that can be installed with apt install (package manager), compiled versions can be downloaded under "Previous
-binaries" in the site. E.g., for Ubuntu, go to [this page](http://packages.debian.org/search?keywords=libpng&suite=default&section=all&arch=any&searchon=names) and download the bullseye (stable) amd64 versions of libpng16-16, libpng-tools, and libpng-dev deb files. Install each deb with "sudo apt install ./deb_name.deb" in the order listed in the prior sentence. libpng-dev should then be installed.
+binaries" in the site. E.g., for Ubuntu, go to [this page](http://packages.debian.org/search?keywords=libpng&suite=default&section=all&arch=any&searchon=names) and download the bullseye (stable) amd64 versions of libpng16-16, libpng-tools, and libpng-dev deb files. Install each deb with "sudo apt install ./deb_name.deb" in the order listed in the prior sentence. libpng-dev should then be installed.<br>
 <br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a directory named "png++" in the base directory of this software.<br>
