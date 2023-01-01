@@ -37,7 +37,7 @@ make
 sudo make install
 sudo ldconfig /usr/local/lib
 ```
-<br>
+
 ### Required textures:
 
 Genesis 8 textures (to be converted)<br>
