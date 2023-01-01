@@ -86,7 +86,7 @@ The software will print the statement "completed" when it has successfully compl
 <br>
 Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.<br>
 <br>
-Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted.<br>
+Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted. A known issue is that some lines between face texture sections may not be blended correctly. A blur brush in an image editor (e.g., [GIMP](https://www.gimp.org)) can be used to fix the blending in the textures. Perhaps in the future the software can be programmed to do the blending automatically.<br>
 <br>
 ### Development guide:
 
