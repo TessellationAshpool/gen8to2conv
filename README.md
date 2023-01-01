@@ -23,6 +23,8 @@ Install by running in a Linux or WSL2 command prompt "sudo apt install libpng-de
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a directory named "png++" in the base directory of this software.<br>
 <br>
+Imagemagick (if wanting to automatically convert to png images). Install with "sudo apt install imagemagick".<br>
+<br>
 ### Required textures:
 
 Genesis 8 textures (to be converted)<br>
@@ -45,7 +47,7 @@ The Genesis 8 textures need to be copied into the folder: "input/gen8textures" i
 The face texture must be converted to a png file and named in the following way:<br>
 g8fbasefacemapd_1001.png<br>
 <br> 
-The script conv_png.sh is included to perform the jpg file conversion. Place the script into any folder that has files that conversion is wanted to be done on. Run the script to convert all jpg files to png files.<br>
+The script conv_png.sh is included to perform the jpg file conversion. Place the script into any folder that has files that conversion is wanted to be done on. Run the script to convert all jpg files to png files. If running this script is wanted, imagemagick needs to be installed.<br>
 <br>
 Next, one needs to download Genesis 2 into DAZ 3D for those textures.<br>
 <br>
