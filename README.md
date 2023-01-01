@@ -71,7 +71,7 @@ Overall, the directories should be set this way:<br>
 /src/				# where source code for project is stored
 gen8to2conv			# program to run the software
 ```
-<br>
+
 ### Running software:
 
 For each run that new texture conversions are wanted, supply a Genesis 8 face texture which will be used for all Genesis 2 textures to be created.<br>
