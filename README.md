@@ -13,7 +13,7 @@ After one does the installation instructions below, all that is needed is to sup
 If using Windows, Windows Subsystem for Linux 2 (WSL2) is needed. This will allow Linux commands in Windows.<br>
 <br>
 How to install WSL2 in Windows:<br>
-In powershell run "wsl --install"<br>
+Run powershell as an administrator by pressing the Windows button, typing "powershell", then right clicking on it and pressing "run as administrator". In powershell, run "wsl --install".<br>
 <br>
 ### Required libraries:
 
