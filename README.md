@@ -26,6 +26,17 @@ Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a directory named "png++" in the base directory of this software.<br>
 <br>
 Imagemagick (if wanting to automatically convert to png images). Install with "sudo apt install imagemagick".<br>
+If using WSL2 and imagemagick is not able to be installed with "apt install", alternative installation instructions can be used [source](https://gist.github.com/cuuupid/963db645047597723956af13ab87b73a). A C compiler is needed for this and can be installed with "sudo apt install build-essential".<br>
+These are:<br>
+```
+wget https://www.imagemagick.org/download/ImageMagick.tar.gz
+tar xvzf ImageMagick.tar.gz
+cd ImageMagick-*
+./configure
+make
+sudo make install
+sudo ldconfig /usr/local/lib
+```
 <br>
 ### Required textures:
 
