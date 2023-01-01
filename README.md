@@ -19,6 +19,8 @@ In powershell run "wsl --install"<br>
 
 Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
 Install by running in a Linux or WSL2 command prompt "sudo apt install libpng-dev".<br>
+Note: if using Linux and your Linux distro does not have a libpng-dev version that can be installed with apt install (package manager), compiled versions can be downloaded under "Previous
+binaries" in the site. E.g., for Ubuntu, go to [this page](http://packages.debian.org/search?keywords=libpng&suite=default&section=all&arch=any&searchon=names) and download the bullseye (stable) amd64 versions of libpng16-16, libpng-tools, and libpng-dev deb files. Install each deb with "sudo apt install ./deb_name.deb" in the order listed in the prior sentence. libpng-dev should then be installed.
 <br>
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a directory named "png++" in the base directory of this software.<br>
@@ -82,18 +84,22 @@ Run from the base directory of this software:<br>
 ./gen8to2conv<br>
 The software will print the statement "completed" when it has successfully completed running.<br>
 <br>
+Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.<br>
+<br>
 Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted.<br>
 <br>
 ### Development guide:
 
 Compiling software:<br>
 <br>
+If wanting to do development work one needs G++ on Linux or an equivalent C++ compiler.<br>
+Note: this software has only been tested to work in Linux and Windows with WSL2 so far.<br>
+<br>
+G++ can be installed in Linux or WSL2 with "sudo apt install build-essential".<br>
+<br>
 An automated rebuilding and running of the software can be done by running "rebuild.sh" from the base directory in a command prompt.<br>
 <br>
 Notes: this software uses somewhat of a bespoke approach to do the texture conversion. This involves selected image portion rescaling, shifting, etc. Also, the color conversion is based on sampling colors between textures. Results seem decent in tests. Anyone contributing improvements by development to the software is welcome.<br>
-<br>
-If wanting to do development work one needs G++ on Linux or an equivalent C++ compiler.<br>
-Note: this software has only been tested to work in Linux and Windows with WSL2 so far.<br>
 <br>
 Running on Windows without WSL2:<br>
 <br>
