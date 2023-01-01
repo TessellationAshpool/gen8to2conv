@@ -62,6 +62,16 @@ torso: v5breetorsom.png<br>
 <br>
 The results of the texture conversion will be in the "output" folder.<br>
 <br>
+Overall, the directories should be set this way:<br>
+```
+/input/gen2textures/				# place all gen 2 textures here
+/input/gen8textures/				# place all gen 8 textures here
+/output/							# where new textures will be output
+/png++/								# where png++ files should be placed
+/src/								# where source code for project is stored
+gen8to2conv							# program to run the software
+```
+<br>
 ### Running software:
 
 For each run that new texture conversions are wanted, supply a Genesis 8 face texture which will be used for all Genesis 2 textures to be created.<br>
