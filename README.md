@@ -15,7 +15,7 @@ If using Windows, Windows Subsystem for Linux 2 (WSL2) is needed. This will allo
 How to install WSL2 in Windows:<br>
 Run powershell as an administrator by pressing the Windows button, typing "powershell", then right clicking on it and pressing "run as administrator". In powershell, run "wsl --install".<br>
 <br>
-### Required libraries:
+### Required software/libraries:
 
 Libpng-dev [site](http://www.libpng.org/pub/png/libpng.html)<br>
 Install by running in a Linux or WSL2 command prompt "sudo apt install libpng-dev".<br>
