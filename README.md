@@ -25,18 +25,10 @@ binaries" in the site. E.g., for Ubuntu, go to [this page](http://packages.debia
 Png++ (e.g., version 0.2.9) [download](https://www.nongnu.org/pngpp/).<br>
 Place these program files into a directory named "png++" in the base directory of this software.<br>
 <br>
-Imagemagick (if wanting to automatically convert to png images). Install with "sudo apt install imagemagick".<br>
-If using WSL2 and imagemagick is not able to be installed with "apt install", alternative installation instructions can be used [source](https://gist.github.com/cuuupid/963db645047597723956af13ab87b73a). A C compiler is needed for this and can be installed with "sudo apt install build-essential".<br>
-These are:<br>
-```
-wget https://www.imagemagick.org/download/ImageMagick.tar.gz
-tar xvzf ImageMagick.tar.gz
-cd ImageMagick-*
-./configure
-make
-sudo make install
-sudo ldconfig /usr/local/lib
-```
+Imagemagick (if wanting to automatically convert to png images). In Linux, install with "sudo apt install imagemagick".<br>
+Seperate scripts are provided for Linux (conv_png.sh) and Windows (conv_png.bat) for the png conversion.<br>
+If using WSL2, currently is recommended to use the Windows version of imagemagick. This can be downloaded [here](https://imagemagick.org/script/download.php#windows). Download the .exe file and open it to install. When it gets to the window "Select Additional Tasks" make sure to have "Install legacy utilities (e.g., convert)" checked.<br>
+Possibly there is a way to install imagemagick in WSL2 but in testing "apt install" did not install it (missing package). There are instructions to install it from source code [link](https://gist.github.com/cuuupid/963db645047597723956af13ab87b73a), but a test did not show the ability to run the "convert" program on jpg files successfully using this method. If wanting to try this source code method, a C compiler is needed for this and can be installed with "sudo apt install build-essential". Using the Windows version is recommened instead of WSL2 version.<br>
 
 ### Required textures:
 
@@ -60,7 +52,7 @@ The Genesis 8 textures need to be copied into the folder: "input/gen8textures" i
 The face texture must be converted to a png file and named in the following way:<br>
 g8fbasefacemapd_1001.png<br>
 <br> 
-The script conv_png.sh is included to perform the jpg file conversion. Place the script into any folder that has files that conversion is wanted to be done on. Run the script to convert all jpg files to png files. If running this script is wanted, imagemagick needs to be installed.<br>
+The script conv_png.sh (Linux) or conv_png.bat (Windows) is included to perform the jpg file conversion. If using the Windows version, run the script in powershell, not a WSL2 terminal. Place the script into any folder that has files that conversion is wanted to be done on. Run the script to convert all jpg files to png files. If running this script is wanted, imagemagick needs to be installed. In Linux, the script may need to be made executable by running "chmod +x conv_png.sh".<br>
 <br>
 Next, one needs to download Genesis 2 into DAZ 3D for those textures.<br>
 <br>
