@@ -87,7 +87,7 @@ Run from the base directory of this software:<br>
 ./gen8to2conv<br>
 The software will print the statement "completed" when it has successfully completed running.<br>
 <br>
-Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.<
+Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.
 
 ### Fine-tuning texture files:
 
