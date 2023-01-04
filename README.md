@@ -87,16 +87,16 @@ Run from the base directory of this software:<br>
 ./gen8to2conv<br>
 The software will print the statement "completed" when it has successfully completed running.<br>
 <br>
-Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.<br>
-<br>
+Note: this software was compiled on Ubuntu 21.10. If a different distro is used, e.g., WSL2, it may need to be recompiled to run successfully. See "compiling software" directions below for that.<
+
+### Fine-tuning texture files:
+
 Some post-processing of the generated images in an image editor by the user may be wanted to customize them based on user preferences. This software aims to do most of the texture conversion work automatically, and allow the user to make any final touches wanted. A known issue is that some lines between face texture sections may not be blended correctly. A blur tool in an image editor (e.g., [GIMP](https://www.gimp.org)) can be used to fix the blending in the textures. Perhaps in the future the software can be programmed to do the blending automatically.<br>
 <br>
-Example use of a blur tool in GIMP: select the region with the area that blending is wanted with the rectangle or free select tool from the left hand menu. Before selecting choose "feather edges" from the left side menu "tool options", and set it to radius 100 (or whatever wanted; this set blending in selection). Select from top menu Filters->Blur->Gaussian Blur. Set size X and Y to value wanted, e.g., 10. One should be able to interactively see the blending in the image before applying the blur. This should produce a color blend effect. There are other methods including changing transparency of copied texture sections to blend regions too that can preserve texture details that blurring may reduce.<br>
+Example use of a blur tool in GIMP: select the region with the area that blending is wanted with the rectangle or free select tool from the left hand menu. Before creating your selection, choose "feather edges" from the left side menu "tool options", and set it to radius 100 (or whatever wanted; this sets blending in the selection). Select from top menu: Filters->Blur->Gaussian Blur. Set size X and Y to value wanted, e.g., 10. One should be able to interactively see the blending in the image before applying the blur. This should produce a color blend effect. There are other methods including changing transparency of copy-and-pasted texture sections to blend regions that can preserve texture details that blurring may reduce.<br>
 <br>
-Color correcting body textures to head colors: the software attempts to sample the colors in the face texture and match the body textures to those colors. However, at times the matching has issues. An image editor can correct the colors in the body images. For example, in GIMP, tools from the tool bar such as Colors->Color Balance, Hue-Saturation, Brightness-Contrast, Levels, and Curves, can adjust colors to the desired levels. Whatever 3d software is used with the models may have options to adjust texture color shading also.<br>
-<br>
-This software is designed to do most of the work, but for fine-details currently users may need to do final touches with the image editor.<br>
-<br>
+Color correcting body textures to head colors: the software attempts to sample the colors in the face texture and match the body textures to those colors. However, at times the matching has issues. An image editor can correct the colors in the body images. For example, in GIMP, tools from the tool bar such as Colors->Color Balance, Hue-Saturation, Brightness-Contrast, Levels, and Curves, can adjust colors to the desired levels. Whatever 3d software is used with the model may have options to adjust texture color shading when it is applied to the model also.<br>
+
 ### Development guide:
 
 Compiling software:<br>
